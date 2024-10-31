@@ -1,0 +1,29 @@
+Final Portfolio: ProjectPortfolio.pdf
+100082177%20Project- Latex Material including Graphics
+
+Supporting materials – 
+
+Notes:
+1.	UpdatedGanttChart- Updated from progress report stage.
+2.	Flow.png- Overview of the process to answering the problem featured on flyer.
+3.	ProjectNotebookNB- Record of meetings, notes from research and code.
+
+GMST datasets:
+1.	HadCRUT4.cvs-URL:https://www.metoffice.gov.uk/hadobs/hadcrut4/data/current/download.html
+Data source: Hadley Centre
+Credit: Climatic Research Unit (University of East Anglia) in conjunction with the Hadley Centre (UK Met Office)
+2.	NASA_GISS.cvs-
+URL:https://data.giss.nasa.gov/gistemp/graphs/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt
+Data source: NASA's Goddard Institute for Space Studies (GISS). 
+Credit: NASA/GISS
+
+Analysis of Monthly and annual data:
+1.	Annual Analysis.R- To recreate import datasets above and follow commentary in code. Plots including ACF plots not included in portfolio in folder “Plots generated on R”. 
+2.	Monthly Analysis.R- Dataset imported directly from URL, to recreate follow commentary in code. Plots including ACF plots not included in portfolio in folder “Plots generated on R”. 
+
+RUN:
+1.	Final Models for Simulations.R- Models based on the analysis above using the square root of residuals to mimic variance from linear model. To recreate follow commentary in code. Plots of synthetic data can be found in “Plots generated on R”.
+2.	AnnualWNRUN.R, AnnualARRUN.R, MonthlyWNRUN.r, MonthlyARRUN.R- 
+Code to run simulations. To replicate open file in R and open file “output.txt”, this stores the results of the tests. Run code remembering to set the seed. Results will load in output file. To get false positive rate get percentage of significant change-points given confidence level, divide by two to get estimate of directional false positives. 
+3.	WNRUN- Run of “AnnualWNRUN.R”, results saved from output file.
+4.	ARRUN- Run of “AnnualARRUN.R”, results saved from output file.
